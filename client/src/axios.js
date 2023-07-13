@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: "https://mern-realestate-l38p.onrender.com",
+    baseURL: "https://real-estatee.onrender.com",
 });
 
 export default instance;

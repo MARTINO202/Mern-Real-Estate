@@ -5,7 +5,6 @@ const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const http = require('http');
-const stripe = require('stripe')(process.env.STRIPE_SECRET);
 
 const server = http.createServer(app);
 const {Server} = require('socket.io');
@@ -42,21 +41,7 @@ app.use('/orders', orderRoutes);
 app.use('/images', imageRoutes);
 
 
-app.post('/create-payment', async(req, res)=> {
-  const {amount} = req.body;
-  console.log(amount);
-  try {
-    const paymentIntent = await stripe.paymentIntents.create({
-      amount,
-      currency: 'usd',
-      payment_method_types: ['card']
-    });
-    res.status(200).json(paymentIntent)
-  } catch (e) {
-    console.log(e.message);
-    res.status(400).json(e.message);
-   }
-})
+
 
 
 server.listen(8080, ()=> {

@@ -1,0 +1,134 @@
+.logout-btn {
+    margin: 0 auto;
+    display: block !important;
+}
+
+.logo {
+    width: 50px;
+}
+
+#cartcount {
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    padding: 2px 4px;
+    vertical-align: top;
+    margin-left: -8px;
+    border-radius: 50%;
+    margin-top: -5px;
+}
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 9px;
+}
+
+.fa-shopping-cart {
+    font-size: 20px;
+}
+
+.notifications-container {
+    padding: 20px;
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid gray;
+    background-color: white;
+    width: 200px;
+    z-index: 99;
+}
+
+.notification-read {
+    background-color: lightblue;
+}
+
+.notification-unread {
+    background-color: lightcoral;
+}
+.fas[data-count] {
+    position: relative;
+}
+
+.fa-bell {
+    font-size: 1.5em;
+}
+
+.fas[data-count]:after {
+    position: absolute;
+    right: -0.75em;
+    top: -0.75em;
+    content: attr(data-count);
+    padding: 0.5em;
+    border-radius: 10em;
+    line-height: 0.9em;
+    color: white;
+    background-color: red;
+    text-align: center;
+    min-width: 2em;
+    font: bold 0.4em sans-serif;
+}
+
+
+
+
+
+
+.left {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3512d1;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.center>.listItem {
+    color: #222;
+    transition: 150ms all ease-in-out;
+}
+
+.center>.listItem:hover {
+    color: #555;
+}
+
+
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.right a:first-child {
+    padding: 0.4rem 1.2rem;
+    background-color: #2500ac;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 150ms all;
+}
+
+.right a:first-child:hover {
+    border-color: #3512d1;
+    color: #3512d1;
+    background-color: #fff;
+}
+
+.right a:nth-child(2) {
+    color: #3512d1;
+    font-size: 18px;
+    cursor: pointer;
+}

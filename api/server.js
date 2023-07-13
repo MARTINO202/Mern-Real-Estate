@@ -16,10 +16,10 @@ const io = new Server(server, {
 
 
 mongoose.connect(process.env.MONGO_URL).then(() => {
-console.log("Connected to Database");
+console.log("Connected to Database")
 }).catch((err) => {
-    console.log("Not Connected to Database ERROR! ", err);
-});
+    console.log("Not Connected to Database ERROR! ", err)
+})
 
 
 // db connecting       classList2023

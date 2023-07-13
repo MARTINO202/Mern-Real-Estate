@@ -15,7 +15,7 @@ const io = new Server(server, {
 })
 
 
-mongoose.connect('mongodb+srv://milla:erxQKUCTLN05Bc7X@cluster0.etdsmic.mongodb.net/').then(() => {
+mongoose.connect(process.env.MONGO_URL).then(() => {
 console.log("Connected to Database");
 }).catch((err) => {
     console.log("Not Connected to Database ERROR! ", err);
